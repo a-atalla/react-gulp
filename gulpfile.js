@@ -15,7 +15,7 @@ gulp.task('serve', () => {
 
 gulp.task('js', () => {
   return browserify('./src/app.js')
-    .transform(babelify, {presets: ['es2015']})
+    .transform(babelify, {presets: ['react', 'es2015']})
     .bundle()
     .pipe(source('bundle.js'))
     .pipe(gulp.dest('./build/js'))

@@ -1,9 +1,5 @@
-import sayHi from './home';
+import React from 'react';
+import { render } from 'react-dom';
+import Home from './containers/home';
 
-const name = 'Ahmed';
-const age = 37;
-
-console.log(`My name is ${name}, and im ${age} years`);
-console.log(`My name is ${name}, and im ${age} years`);
-console.log('&&&&&&&&&&&&&');
-sayHi();
+render(<Home />, document.getElementById('app'));
